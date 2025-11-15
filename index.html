@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Packet Sniffer Simulator</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+        }
+        table, th, td {
+            border: 1px solid #777;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        #stats {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .btn {
+            background: #2196F3;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background: #0b7dda;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Network Packet Sniffer Simulator (HTML + JavaScript)</h2>
+
+    <button class="btn" onclick="startSniffer()">Start Sniffing</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Packet ID</th>
+                <th>Source IP</th>
+                <th>Destination IP</th>
+                <th>Protocol</th>
+                <th>Port</th>
+            </tr>
+        </thead>
+        <tbody id="packetTable"></tbody>
+    </table>
+
+    <div id="stats"></div>
+
+    <!-- Graph Canvas -->
+    <canvas id="packetChart" width="400" height="150"></canvas>
+</div>
+
+<!-- Load Chart.js FIRST -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- Load your JS file -->
+<script src="sniffer.js"></script>
+
+</body>
+</html>
