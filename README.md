@@ -104,7 +104,7 @@ Chart.js updates its data every second based on packets created.
 ---
 
 ## 📸 Screenshot
-<img src=""
+<img src="Screenshot (42).png">
 
 You can create a folder:
 
